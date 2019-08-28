@@ -1,0 +1,19 @@
+{
+  "handlers": {
+    "default": {
+      "type": "set",
+      "handlers": [ "mailer" ]
+    },
+    "mailer": {
+      "type": "pipe",
+      "command": "handler-mailer.rb",
+      "severities": [
+        "ok",
+        "warning",
+        "critical",
+        "unknown"
+      ]
+    }
+  }
+}
+

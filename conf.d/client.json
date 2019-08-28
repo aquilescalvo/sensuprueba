@@ -1,0 +1,9 @@
+{
+  "client": {
+    "environment": "development",
+    "address": "192.168.56.111",
+    "subscriptions": [
+      "dev"
+    ]
+  }
+}

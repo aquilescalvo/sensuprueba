@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "mem_metrics": {
+      "type": "metric",
+      "command": "metrics-memory-percent.rb -s :::name:::",
+      "subscribers": [
+        "dev"
+      ],
+      "interval": 10,
+      "handlers": [
+        "graphite"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "disks": {
+      "command": "check-disk-usage.rb -w 75 -c 90",
+      "subscribers": [
+        "dev"
+      ],
+      "interval": 60,
+      "handlers": [
+        "slack"
+      ]
+    }
+  }
+}
